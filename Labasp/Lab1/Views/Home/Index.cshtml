@@ -1,0 +1,91 @@
+﻿@model IndexViewModel
+@using Lab1.Models.ViewModels
+@using Lab1.Models
+@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+    ViewData["Title"] = "Index";
+}
+@{
+    Layout = "_Layout"; // Указываем какой layout использовать
+}
+
+
+<main class="container">
+    <h1>Лабораторная работ 2</h1>
+    <p>Список</p>
+    <ol type="A">
+        @for (int i = 1; i <= 6; i++)
+        {
+            <li>
+                элемент @i списка
+            </li>
+        }
+    </ol>
+    <hr class="dropdown-divider">
+    <h1>Форма</h1>
+    <form method="post">
+        <div class="row mb-3">
+            <label asp-for="SelectedItemId" class="col-sm-2 col-form-label">Выберите элемент:</label>
+            <div class="col-sm-10">
+                <select asp-for="SelectedItemId" 
+                        asp-items="@Model.SelectItems" 
+                        class="form-control">
+                    <option value="">-- Выберите элемент --</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+            Чек-бокс 1
+        </label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+            Чек-бокс 2
+        </label>
+        </div>
+
+        <fieldset class="row">
+            <div class="col-md-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                        checked>
+                    <label class="form-check-label" for="gridRadios1">
+                        Радио-1
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                        Радио-2
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                    <label class="form-check-label" for="gridRadios3">
+                        Радио-3
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+        <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>
+</main>

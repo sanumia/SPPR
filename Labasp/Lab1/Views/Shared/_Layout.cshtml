@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/ all.min.css" />
+    <link rel="stylesheet" href="~/WebLabs_BSUIR_V02.styles.css" asp-append- version="true" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar bg-dark navbar-expand-md border-bottom border-body" data-bs-theme="dark">
+                <!-- меню сайта -->
+                <a class="navbar-brand" href="#">35350032</a>
+                <div class="navbar-nav">
+                    @{
+                        var controller = ViewContext.RouteData.Values["controller"]?.ToString().ToLower() ?? string.Empty;
+                        var action = ViewContext.RouteData.Values["action"]?.ToString().ToLower() ?? string.Empty;
+                    }
+                    <a asp-controller="Home" asp-action="Index"
+                        class="nav-item nav-link @(controller == "home" && action == "index" ? "active" : "")">Лб 1</a>
+                    <a asp-controller="Sweet" asp-action="Index"
+                        class="nav-item nav-link @(controller == "product" && action == "index" ? "active" : "")">Каталог</a>
+                    <a asp-page="/Index"
+                        class="nav-item nav-link @(controller == "admin" ? "active" : "")">Администрирование</a>
+                </div>
+
+                <!-- меню сайта - конец -->
+                <!-- Информация пользователя -->
+                @await Component.InvokeAsync("Cart")
+                <div class="dropdown ms-4 nav-color">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        User@gmail.com
+                        <img src="images/default-profile-picture.png" width="30" alt="User" class="rounded nav-color" />
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li>
+                            <span class="dropdown-item-text">
+                                <img src="images/default-profile-picture.png" width="50" alt="User" class="rounded" />
+                                user@gmail.com
+                            </span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            @* <form id="logoutForm" class="form-inline"> *@
+                            <button asp-controller="Account" asp-action="LogOut" id="logout" type="submit"
+                                class="nav-link btn btn-link">Logout</button>
+                            @* </form> *@
+                        </li>
+                    </ul>
+            </nav> <!-- Панель навигации - конец -->
+
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer></footer>
+    <div class="container">
+        <div class="navbar bg-dark navbar-expand-md border-bottom border-body" data-bs-theme="dark">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-item nav-link" href="http://www.facebook.com">
+                    <i class="bi bi-facebook" style="font-size: 2rem"></i>
+                </a>
+                <a class="nav-item nav-link" href="http://www.vk.com">
+                    <i class="bi bi-twitter" style="font-size: 2rem"></i>
+                </a>
+                <a class="nav-item nav-link" href="http://www.twitter.com">
+                    <i class="bi-telegram" style="font-size: 2rem"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+
+</html>

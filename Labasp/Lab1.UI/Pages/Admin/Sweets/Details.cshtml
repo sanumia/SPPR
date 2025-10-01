@@ -1,0 +1,32 @@
+@page "{id:int}"
+@model Lab1.UI.Pages.Admin.Sweets.DetailsModel
+@{
+    ViewData["Title"] = "Детали сладости";
+}
+
+<h1 class="h3 mb-3">Детали сладости</h1>
+
+<dl class="row">
+  <dt class="col-sm-3">Изображение</dt>
+  <dd class="col-sm-9">
+    <img src="@Model.Item.Image" alt="@Model.Item.Name" style="max-width:200px;border-radius:.25rem;" />
+  </dd>
+
+  <dt class="col-sm-3">Название</dt>
+  <dd class="col-sm-9">@Model.Item.Name</dd>
+
+  <dt class="col-sm-3">Описание</dt>
+  <dd class="col-sm-9">@Model.Item.Description</dd>
+
+  <dt class="col-sm-3">Цена</dt>
+  <dd class="col-sm-9">@Model.Item.Price</dd>
+
+  <dt class="col-sm-3">Категория</dt>
+  <dd class="col-sm-9">@Model.Item.Category?.Name (@Model.Item.CategoryId)</dd>
+</dl>
+
+<div class="mt-3">
+  <a asp-page="Edit" asp-route-id="@Model.Item.Id" class="btn btn-primary"><i class="bi bi-pencil"></i> Редактировать</a>
+  <a asp-page="Index" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Назад</a>
+</div>
+

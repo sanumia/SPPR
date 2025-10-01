@@ -1,0 +1,733 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\university\\csharp\\Labasp\\Lab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B490F48-B01A-45EC-B180-F859ECEC6D40}|..\\Lab1.UI\\Lab1.UI.csproj|c:\\university\\csharp\\labasp\\lab1.ui\\pages\\admin\\sweets\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\services\\apisweetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\usecases\\getlistofcategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\services\\apicategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\models\\responsedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\models\\uridata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B490F48-B01A-45EC-B180-F859ECEC6D40}|..\\Lab1.UI\\Lab1.UI.csproj|c:\\university\\csharp\\labasp\\lab1.ui\\pages\\admin\\sweets\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B490F48-B01A-45EC-B180-F859ECEC6D40}|..\\Lab1.UI\\Lab1.UI.csproj|c:\\university\\csharp\\labasp\\lab1.ui\\pages\\admin\\sweets\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B490F48-B01A-45EC-B180-F859ECEC6D40}|..\\Lab1.UI\\Lab1.UI.csproj|c:\\university\\csharp\\labasp\\lab1.ui\\pages\\admin\\sweets\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B490F48-B01A-45EC-B180-F859ECEC6D40}|..\\Lab1.UI\\Lab1.UI.csproj|c:\\university\\csharp\\labasp\\lab1.ui\\pages\\admin\\sweets\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B490F48-B01A-45EC-B180-F859ECEC6D40}|..\\Lab1.UI\\Lab1.UI.csproj|c:\\university\\csharp\\labasp\\lab1.ui\\pages\\admin\\sweets\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|c:\\university\\csharp\\labasp\\lab1\\lab1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|solutionrelative:lab1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B490F48-B01A-45EC-B180-F859ECEC6D40}|..\\Lab1.UI\\Lab1.UI.csproj|c:\\university\\csharp\\labasp\\lab1.ui\\lab1.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|c:\\university\\csharp\\labasp\\lab1\\controllers\\sweetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|solutionrelative:controllers\\sweetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B490F48-B01A-45EC-B180-F859ECEC6D40}|..\\Lab1.UI\\Lab1.UI.csproj|c:\\university\\csharp\\labasp\\lab1.ui\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B490F48-B01A-45EC-B180-F859ECEC6D40}|..\\Lab1.UI\\Lab1.UI.csproj|c:\\university\\csharp\\labasp\\lab1.ui\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B490F48-B01A-45EC-B180-F859ECEC6D40}|..\\Lab1.UI\\Lab1.UI.csproj|c:\\university\\csharp\\labasp\\lab1.ui\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5F0D3FD-567C-6BD9-0370-45DDC6AF910A}|..\\Lab1.Domain\\Lab1.Domain.csproj|c:\\university\\csharp\\labasp\\lab1.domain\\models\\responsedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\interfaces\\isweetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\endpoints\\sweetendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|c:\\university\\csharp\\labasp\\lab1\\models\\viewmodels\\indexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|solutionrelative:models\\viewmodels\\indexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|c:\\university\\csharp\\labasp\\lab1\\models\\listdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|solutionrelative:models\\listdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|c:\\university\\csharp\\labasp\\lab1\\views\\sweet\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|solutionrelative:views\\sweet\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|c:\\university\\csharp\\labasp\\lab1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|c:\\university\\csharp\\labasp\\lab1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|c:\\university\\csharp\\labasp\\lab1\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|solutionrelative:_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|c:\\university\\csharp\\labasp\\lab1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5F0D3FD-567C-6BD9-0370-45DDC6AF910A}|..\\Lab1.Domain\\Lab1.Domain.csproj|c:\\university\\csharp\\labasp\\lab1.domain\\models\\listmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\usecases\\getlistofsweets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\models\\listmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\lab1.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|c:\\university\\csharp\\labasp\\lab1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|c:\\university\\csharp\\labasp\\lab1\\viewcomponents\\cartviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|solutionrelative:viewcomponents\\cartviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\data\\dbinitializer..cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|c:\\university\\csharp\\labasp\\lab1\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5F0D3FD-567C-6BD9-0370-45DDC6AF910A}|..\\Lab1.Domain\\Lab1.Domain.csproj|c:\\university\\csharp\\labasp\\lab1.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5F0D3FD-567C-6BD9-0370-45DDC6AF910A}|..\\Lab1.Domain\\Lab1.Domain.csproj|c:\\university\\csharp\\labasp\\lab1.domain\\entities\\sweet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\compose.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|c:\\university\\csharp\\labasp\\lab1\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|solutionrelative:globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\postgres.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C7A43F-9C3C-2F6E-BAD1-C71B264E1AE3}|..\\Lab1.API\\Lab1.API.csproj|c:\\university\\csharp\\labasp\\lab1.api\\lab1.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ResponseData.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\Models\\ResponseData.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\Models\\ResponseData.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\Models\\ResponseData.cs",
+              "RelativeToolTip": "..\\Lab1.API\\Models\\ResponseData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T13:42:05.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApiCategoryService.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\Services\\ApiCategoryService.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\Services\\ApiCategoryService.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\Services\\ApiCategoryService.cs",
+              "RelativeToolTip": "..\\Lab1.API\\Services\\ApiCategoryService.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAkwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T16:33:46.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetListOfCategories.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\UseCases\\GetListOfCategories.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\UseCases\\GetListOfCategories.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\UseCases\\GetListOfCategories.cs",
+              "RelativeToolTip": "..\\Lab1.API\\UseCases\\GetListOfCategories.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T10:13:43.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\Program.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\Program.cs",
+              "RelativeToolTip": "..\\Lab1.API\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T09:00:15.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApiSweetService.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\Services\\ApiSweetService.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\Services\\ApiSweetService.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\Services\\ApiSweetService.cs",
+              "RelativeToolTip": "..\\Lab1.API\\Services\\ApiSweetService.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAYwAIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T16:34:58.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\appsettings.json",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\appsettings.json",
+              "RelativeToolTip": "..\\Lab1.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-24T09:06:51.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\Admin\\Sweets\\Create.cshtml",
+              "RelativeDocumentMoniker": "..\\Lab1.UI\\Pages\\Admin\\Sweets\\Create.cshtml",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\Admin\\Sweets\\Create.cshtml",
+              "RelativeToolTip": "..\\Lab1.UI\\Pages\\Admin\\Sweets\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T13:25:32.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UriData.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\Models\\UriData.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\Models\\UriData.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\Models\\UriData.cs",
+              "RelativeToolTip": "..\\Lab1.API\\Models\\UriData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T16:30:50.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\Interfaces\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\Interfaces\\ICategoryService.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\Interfaces\\ICategoryService.cs",
+              "RelativeToolTip": "..\\Lab1.API\\Interfaces\\ICategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T16:31:47.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\Admin\\Sweets\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.UI\\Pages\\Admin\\Sweets\\Edit.cshtml.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\Admin\\Sweets\\Edit.cshtml.cs",
+              "RelativeToolTip": "..\\Lab1.UI\\Pages\\Admin\\Sweets\\Edit.cshtml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAEwBcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T13:32:39.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "..\\Lab1.UI\\Pages\\Error.cshtml",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\Error.cshtml",
+              "RelativeToolTip": "..\\Lab1.UI\\Pages\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T13:24:45.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Lab1.UI.csproj",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Lab1.UI.csproj",
+              "RelativeDocumentMoniker": "..\\Lab1.UI\\Lab1.UI.csproj",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Lab1.UI.csproj",
+              "RelativeToolTip": "..\\Lab1.UI\\Lab1.UI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-01T13:25:01.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\Admin\\Sweets\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.UI\\Pages\\Admin\\Sweets\\Details.cshtml.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\Admin\\Sweets\\Details.cshtml.cs",
+              "RelativeToolTip": "..\\Lab1.UI\\Pages\\Admin\\Sweets\\Details.cshtml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAEwBYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T13:32:18.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\Admin\\Sweets\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.UI\\Pages\\Admin\\Sweets\\Index.cshtml.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\Admin\\Sweets\\Index.cshtml.cs",
+              "RelativeToolTip": "..\\Lab1.UI\\Pages\\Admin\\Sweets\\Index.cshtml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADgvxsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T13:33:17.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\Admin\\Sweets\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.UI\\Pages\\Admin\\Sweets\\Delete.cshtml.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\Admin\\Sweets\\Delete.cshtml.cs",
+              "RelativeToolTip": "..\\Lab1.UI\\Pages\\Admin\\Sweets\\Delete.cshtml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAawCIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T13:33:39.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\Admin\\Sweets\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.UI\\Pages\\Admin\\Sweets\\Create.cshtml.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\Admin\\Sweets\\Create.cshtml.cs",
+              "RelativeToolTip": "..\\Lab1.UI\\Pages\\Admin\\Sweets\\Create.cshtml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAIA1wCAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T13:33:44.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "..\\Lab1.UI\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "..\\Lab1.UI\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T13:24:44.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Lab1.csproj",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1\\Lab1.csproj",
+              "RelativeDocumentMoniker": "Lab1.csproj",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1\\Lab1.csproj",
+              "RelativeToolTip": "Lab1.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-30T19:22:01.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\Lab1.UI\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.UI\\Pages\\Index.cshtml",
+              "RelativeToolTip": "..\\Lab1.UI\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T19:22:57.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SweetController.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1\\Controllers\\SweetController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SweetController.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1\\Controllers\\SweetController.cs",
+              "RelativeToolTip": "Controllers\\SweetController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAuwBYAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T09:26:30.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ISweetService.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\Interfaces\\ISweetService.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\Interfaces\\ISweetService.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\Interfaces\\ISweetService.cs",
+              "RelativeToolTip": "..\\Lab1.API\\Interfaces\\ISweetService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T16:32:09.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SweetEndpoints.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\EndPoints\\SweetEndpoints.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\EndPoints\\SweetEndpoints.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\EndPoints\\SweetEndpoints.cs",
+              "RelativeToolTip": "..\\Lab1.API\\EndPoints\\SweetEndpoints.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T09:51:18.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IndexViewModel.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1\\Models\\ViewModels\\IndexViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\IndexViewModel.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1\\Models\\ViewModels\\IndexViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\IndexViewModel.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T09:27:03.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ResponseData.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.Domain\\Models\\ResponseData.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.Domain\\Models\\ResponseData.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.Domain\\Models\\ResponseData.cs",
+              "RelativeToolTip": "..\\Lab1.Domain\\Models\\ResponseData.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T09:26:46.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ListDemo.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1\\Models\\ListDemo.cs",
+              "RelativeDocumentMoniker": "Models\\ListDemo.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1\\Models\\ListDemo.cs",
+              "RelativeToolTip": "Models\\ListDemo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T09:26:18.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1\\Views\\Sweet\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Sweet\\Index.cshtml",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1\\Views\\Sweet\\Index.cshtml",
+              "RelativeToolTip": "Views\\Sweet\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAIBJwCIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T09:54:33.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T09:56:00.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T09:55:58.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "_ViewImports.cshtml",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1\\_ViewImports.cshtml",
+              "RelativeToolTip": "_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T09:55:38.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "..\\Lab1.API\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T09:44:52.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T17:55:50.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ListModel.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\Models\\ListModel.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\Models\\ListModel.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\Models\\ListModel.cs",
+              "RelativeToolTip": "..\\Lab1.API\\Models\\ListModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T13:41:43.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ListModel.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.Domain\\Models\\ListModel.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.Domain\\Models\\ListModel.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.Domain\\Models\\ListModel.cs",
+              "RelativeToolTip": "..\\Lab1.Domain\\Models\\ListModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T09:26:44.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "GetListofSweets.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\UseCases\\GetListofSweets.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\UseCases\\GetListofSweets.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\UseCases\\GetListofSweets.cs",
+              "RelativeToolTip": "..\\Lab1.API\\UseCases\\GetListofSweets.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T10:07:17.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Lab1.API.csproj",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\Lab1.API.csproj",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\Lab1.API.csproj",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\Lab1.API.csproj",
+              "RelativeToolTip": "..\\Lab1.API\\Lab1.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-24T09:04:17.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T09:54:31.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CartViewComponent.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1\\ViewComponents\\CartViewComponent.cs",
+              "RelativeDocumentMoniker": "ViewComponents\\CartViewComponent.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1\\ViewComponents\\CartViewComponent.cs",
+              "RelativeToolTip": "ViewComponents\\CartViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T09:27:08.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.Domain\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.Domain\\Entities\\Category.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.Domain\\Entities\\Category.cs",
+              "RelativeToolTip": "..\\Lab1.Domain\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T11:05:10.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T09:27:06.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "DbInitializer..cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\Data\\DbInitializer..cs",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\Data\\DbInitializer..cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\Data\\DbInitializer..cs",
+              "RelativeToolTip": "..\\Lab1.API\\Data\\DbInitializer..cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwFUAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T07:22:03.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Sweet.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.Domain\\Entities\\Sweet.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.Domain\\Entities\\Sweet.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.Domain\\Entities\\Sweet.cs",
+              "RelativeToolTip": "..\\Lab1.Domain\\Entities\\Sweet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T11:05:17.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "compose.yaml",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\compose.yaml",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\compose.yaml",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\compose.yaml",
+              "RelativeToolTip": "..\\Lab1.API\\compose.yaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-09-24T09:12:45.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "GlobalUsings.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1\\GlobalUsings.cs",
+              "RelativeToolTip": "GlobalUsings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T09:26:52.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Lab1.API.http",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\Lab1.API.http",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\Lab1.API.http",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\Lab1.API.http",
+              "RelativeToolTip": "..\\Lab1.API\\Lab1.API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-09-24T09:00:12.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "..\\Lab1.API\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwCMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T10:28:36.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "postgres.env",
+              "DocumentMoniker": "C:\\university\\csharp\\Labasp\\Lab1.API\\postgres.env",
+              "RelativeDocumentMoniker": "..\\Lab1.API\\postgres.env",
+              "ToolTip": "C:\\university\\csharp\\Labasp\\Lab1.API\\postgres.env",
+              "RelativeToolTip": "..\\Lab1.API\\postgres.env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-24T09:00:13.635Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

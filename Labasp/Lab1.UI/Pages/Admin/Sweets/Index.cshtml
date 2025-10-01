@@ -1,0 +1,60 @@
+@page
+@model Lab1.UI.Pages.Admin.Sweets.IndexModel
+@{
+    ViewData["Title"] = "Сладости - Администрирование";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="h3 m-0">Сладости</h1>
+    <a asp-page="Create" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Добавить</a>
+  </div>
+
+<table class="table table-striped align-middle">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Изображение</th>
+            <th>Название</th>
+            <th>Категория</th>
+            <th class="text-end">Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Items)
+{
+        <tr>
+            <td>@item.Id</td>
+            <td>
+                <img src="@item.Image" alt="@item.Name" style="width:64px;height:64px;object-fit:cover;border-radius:.25rem;" />
+            </td>
+            <td>@item.Name</td>
+            <td>@item.Category?.Name</td>
+            <td class="text-end">
+                <div class="btn-group btn-group-sm" role="group">
+                    <a asp-page="Details" asp-route-id="@item.Id" class="btn btn-outline-secondary" title="Просмотр"><i class="bi bi-eye"></i></a>
+                    <a asp-page="Edit" asp-route-id="@item.Id" class="btn btn-outline-primary" title="Редактировать"><i class="bi bi-pencil"></i></a>
+                    <a asp-page="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger" title="Удалить"><i class="bi bi-trash"></i></a>
+                </div>
+            </td>
+        </tr>
+}
+    </tbody>
+  </table>
+
+<nav aria-label="Навигация по страницам">
+  <ul class="pagination justify-content-center">
+    <li class="page-item @(Model.CurrentPage <= 1 ? "disabled" : "")">
+      <a class="page-link" asp-route-pageNo="@(Model.CurrentPage - 1)"><i class="bi bi-chevron-left"></i></a>
+    </li>
+    @for (var p = 1; p <= Model.TotalPages; p++)
+    {
+        <li class="page-item @(p == Model.CurrentPage ? "active" : "")">
+            <a class="page-link" asp-route-pageNo="@p">@p</a>
+        </li>
+    }
+    <li class="page-item @(Model.CurrentPage >= Model.TotalPages ? "disabled" : "")">
+      <a class="page-link" asp-route-pageNo="@(Model.CurrentPage + 1)"><i class="bi bi-chevron-right"></i></a>
+    </li>
+  </ul>
+</nav>
+

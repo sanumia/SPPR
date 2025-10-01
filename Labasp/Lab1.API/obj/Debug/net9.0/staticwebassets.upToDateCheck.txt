@@ -1,0 +1,7 @@
+wwwroot\images\cake.jpg
+wwwroot\images\caramel-candy.jpg
+wwwroot\images\chocolate-cookies.jpg
+wwwroot\images\default-profile-picture.png
+wwwroot\images\dubai-chocolate.jpg
+wwwroot\images\gummy-bears.jpg
+wwwroot\images\vanilla-marshmallow.jpg

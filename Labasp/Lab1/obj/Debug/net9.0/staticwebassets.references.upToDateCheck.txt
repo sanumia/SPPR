@@ -1,0 +1,8 @@
+C:\university\csharp\Labasp\Lab1.UI\obj\Debug\net9.0\staticwebassets.build.json
+C:\university\csharp\Labasp\Lab1.API\obj\Debug\net9.0\staticwebassets.build.json
+C:\university\csharp\Labasp\Lab1.UI\obj\Debug\net9.0\staticwebassets.build.json
+C:\university\csharp\Labasp\Lab1.API\obj\Debug\net9.0\staticwebassets.build.json
+C:\university\csharp\Labasp\Lab1.UI\obj\Debug\net9.0\staticwebassets.build.json
+C:\university\csharp\Labasp\Lab1.API\obj\Debug\net9.0\staticwebassets.build.json
+C:\university\csharp\Labasp\Lab1.UI\obj\Debug\net9.0\staticwebassets.build.json
+C:\university\csharp\Labasp\Lab1.API\obj\Debug\net9.0\staticwebassets.build.json

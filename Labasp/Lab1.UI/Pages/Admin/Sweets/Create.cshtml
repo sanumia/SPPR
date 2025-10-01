@@ -1,0 +1,38 @@
+@page
+@model Lab1.UI.Pages.Admin.Sweets.CreateModel
+@{
+    ViewData["Title"] = "Добавить сладость";
+}
+
+<h1 class="h3 mb-3">Добавить сладость</h1>
+
+<form method="post" class="needs-validation" novalidate>
+    <div class="mb-3">
+        <label asp-for="Item.Name" class="form-label"></label>
+        <input asp-for="Item.Name" class="form-control" />
+        <span asp-validation-for="Item.Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Item.Description" class="form-label"></label>
+        <textarea asp-for="Item.Description" class="form-control"></textarea>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Item.Price" class="form-label"></label>
+        <input asp-for="Item.Price" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Item.Image" class="form-label"></label>
+        <input asp-for="Item.Image" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Item.CategoryId" class="form-label">Категория Id</label>
+        <input asp-for="Item.CategoryId" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary"><i class="bi bi-check2"></i> Сохранить</button>
+    <a asp-page="Index" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Назад</a>
+</form>
+
+@section Scripts{
+    <partial name="~/Pages/Shared/_ValidationScriptsPartial.cshtml" />
+}
+
