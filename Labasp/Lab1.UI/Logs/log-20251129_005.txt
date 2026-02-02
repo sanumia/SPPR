@@ -1,0 +1,4 @@
+2025-11-29 12:42:06.408 +03:00 [INF] Requesting categories from API
+2025-11-29 12:42:06.481 +03:00 [INF] Access Token expired or about to expire. Attempting refresh.
+2025-11-29 12:42:06.581 +03:00 [INF] Token successfully refreshed.
+2025-11-29 12:43:00.479 +03:00 [INF] Requesting categories from API

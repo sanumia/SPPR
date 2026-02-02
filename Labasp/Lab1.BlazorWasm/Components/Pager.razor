@@ -1,0 +1,53 @@
+@inject IDataService DataService
+@implements IDisposable
+
+@if (DataService.TotalPages > 1)
+{
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            <li class="page-item @(DataService.CurrentPage == 1 ? "disabled" : "")">
+                <button class="page-link" @onclick="() => NavigateToPage(DataService.CurrentPage - 1)" 
+                        disabled="@(DataService.CurrentPage == 1)">
+                    Предыдущая
+                </button>
+            </li>
+            @for (int i = 1; i <= DataService.TotalPages; i++)
+            {
+                <li class="page-item @(i == DataService.CurrentPage ? "active" : "")">
+                    <button class="page-link" @onclick="() => NavigateToPage(i)">
+                        @i
+                    </button>
+                </li>
+            }
+            <li class="page-item @(DataService.CurrentPage == DataService.TotalPages ? "disabled" : "")">
+                <button class="page-link" @onclick="() => NavigateToPage(DataService.CurrentPage + 1)" 
+                        disabled="@(DataService.CurrentPage == DataService.TotalPages)">
+                    Следующая
+                </button>
+            </li>
+        </ul>
+    </nav>
+}
+
+@code {
+    protected override void OnInitialized()
+    {
+        DataService.DataLoaded += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        DataService.DataLoaded -= StateHasChanged;
+    }
+
+    private async Task NavigateToPage(int pageNo)
+    {
+        if (pageNo >= 1 && pageNo <= DataService.TotalPages)
+        {
+            await DataService.GetSweetListAsync(pageNo);
+        }
+    }
+}
+
+
+

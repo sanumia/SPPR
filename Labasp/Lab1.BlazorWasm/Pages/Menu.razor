@@ -1,0 +1,69 @@
+@page "/menu"
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+@inject IDataService DataService
+
+<PageTitle>Меню</PageTitle>
+
+<h3>Меню дня</h3>
+
+@if (_isLoading)
+{
+    <div class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+    </div>
+}
+else if (!string.IsNullOrEmpty(_errorMessage))
+{
+    <div class="alert alert-danger" role="alert">
+        @_errorMessage
+    </div>
+}
+else
+{
+    <CategorySelector />
+
+    <SweetsList OnSweetSelected="OnSweetSelected" />
+
+    <SweetDetails SelectedSweet="@_selectedSweet" />
+
+    <Pager />
+}
+
+@code {
+    private Sweet? _selectedSweet;
+    private bool _isLoading = true;
+    private string? _errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _isLoading = true;
+            await DataService.GetCategoryListAsync();
+            await DataService.GetSweetListAsync(1);
+            
+            if (!DataService.Success)
+            {
+                _errorMessage = DataService.ErrorMessage;
+            }
+        }
+        catch (Exception ex)
+        {
+            _errorMessage = $"Ошибка при загрузке данных: {ex.Message}";
+        }
+        finally
+        {
+            _isLoading = false;
+        }
+    }
+
+    private async Task OnSweetSelected(int sweetId)
+    {
+        _selectedSweet = DataService.Sweets.FirstOrDefault(s => s.Id == sweetId);
+        StateHasChanged();
+    }
+}
+

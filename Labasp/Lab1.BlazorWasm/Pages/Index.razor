@@ -1,0 +1,113 @@
+﻿@page "/"
+@using Lab1.Domain.Entities
+@inject IDataService DataService
+@implements IDisposable
+
+<PageTitle>WebLabs_BSUIR_V02 Blaz</PageTitle>
+
+<div class="container mt-4">
+    <!-- Заголовок и информация -->
+    <div class="row mb-4">
+        <div class="col">
+            <h4>This component demonstrates fetching data from the server.</h4>
+        </div>
+    </div>
+
+    <!-- Таблица сладостей -->
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Сладости</h5>
+                </div>
+                <div class="card-body p-0">
+                    @if (!DataService.Success)
+                    {
+                        <div class="alert alert-danger m-3">
+                            @DataService.ErrorMessage
+                        </div>
+                    }
+                    else if (DataService.Sweets.Count == 0)
+                    {
+                        <div class="text-center p-4">
+                            <p>Нет данных для отображения</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <table class="table table-striped mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                    <th>Category</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var sweet in DataService.Sweets)
+                                {
+                                    <tr>
+                                        <td>@sweet.Name</td>
+                                        <td>@sweet.Description</td>
+                                        <td>@sweet.Price.ToString("C")</td>
+                                        <td>@(GetCategoryName(sweet.CategoryId))</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+                </div>
+                
+                <!-- Пагинация -->
+                @if (DataService.TotalPages > 1)
+                {
+                    <div class="card-footer">
+                        <nav>
+                            <ul class="pagination justify-content-center mb-0">
+                                @for (int i = 1; i <= DataService.TotalPages; i++)
+                                {
+                                    <li class="page-item @(i == DataService.CurrentPage ? "active" : "")">
+                                        <button class="page-link" @onclick="() => ChangePage(i)">@i</button>
+                                    </li>
+                                }
+                            </ul>
+                        </nav>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        // Подписываемся на событие загрузки данных
+        DataService.DataLoaded += OnDataLoaded;
+        
+        // Загружаем категории и сладости
+        await DataService.GetCategoryListAsync();
+        await DataService.GetSweetListAsync();
+    }
+
+    private void OnDataLoaded()
+    {
+        InvokeAsync(StateHasChanged);
+    }
+
+    private async Task ChangePage(int pageNo)
+    {
+        await DataService.GetSweetListAsync(pageNo);
+    }
+
+    private string GetCategoryName(int categoryId)
+    {
+        return DataService.Categories.FirstOrDefault(c => c.Id == categoryId)?.Name ?? "Unknown";
+    }
+
+    public void Dispose()
+    {
+        DataService.DataLoaded -= OnDataLoaded;
+    }
+}

@@ -1,0 +1,30 @@
+2025-11-29 12:32:28.070 +03:00 [INF] Access Token expired or about to expire. Attempting refresh.
+2025-11-29 12:32:29.027 +03:00 [ERR] Failed to set authorization header for API request.
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Lab1.UI.Services.Authentication.KeycloakTokenAccessor.RefreshTokenAsync(String oldRefreshToken) in C:\university\csharp\Labasp\Lab1.UI\Services\Authentication\KeycloakTokenAccessor.cs:line 165
+   at Lab1.UI.Services.Authentication.KeycloakTokenAccessor.GetUserAccessTokenAsync() in C:\university\csharp\Labasp\Lab1.UI\Services\Authentication\KeycloakTokenAccessor.cs:line 65
+   at Lab1.UI.Services.Authentication.KeycloakTokenAccessor.SetAuthorizationHeaderAsync(HttpClient httpClient, Boolean isClient) in C:\university\csharp\Labasp\Lab1.UI\Services\Authentication\KeycloakTokenAccessor.cs:line 105
+   at Lab1.UI.Services.Authentication.AuthorizationDelegatingHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) in C:\university\csharp\Labasp\Lab1.UI\Services\Authentication\AuthorizationDelegatingHandler.cs:line 36
+2025-11-29 12:32:31.942 +03:00 [INF] Access Token expired or about to expire. Attempting refresh.
+2025-11-29 12:32:31.947 +03:00 [INF] Requesting categories from API
+2025-11-29 12:32:31.949 +03:00 [INF] Access Token expired or about to expire. Attempting refresh.
+2025-11-29 12:32:33.015 +03:00 [ERR] Keycloak refresh token request failed: "BadRequest". Response: {"error":"invalid_grant","error_description":"Token is not active"}
+2025-11-29 12:32:33.015 +03:00 [ERR] Keycloak refresh token request failed: "BadRequest". Response: {"error":"invalid_grant","error_description":"Token is not active"}
+2025-11-29 12:32:33.026 +03:00 [ERR] Token refresh failed. Signing out user.
+2025-11-29 12:32:33.028 +03:00 [ERR] Token refresh failed. Signing out user.
+2025-11-29 12:32:33.034 +03:00 [WRN] User Access Token is not available or could not be refreshed. Authorization header is not set.
+2025-11-29 12:32:33.035 +03:00 [WRN] User Access Token is not available or could not be refreshed. Authorization header is not set.
+2025-11-29 12:32:39.684 +03:00 [INF] ---> request /Logout returns 302
+2025-11-29 12:32:40.059 +03:00 [WRN] User Access Token is not available or could not be refreshed. Authorization header is not set.
+2025-11-29 12:32:41.611 +03:00 [INF] ---> request /Login returns 302
+2025-11-29 12:35:06.510 +03:00 [INF] Requesting categories from API

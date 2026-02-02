@@ -5,6 +5,7 @@ C:\university\csharp\Labasp\Lab1.Domain\obj\Debug\net9.0\Lab1.Domain.GeneratedMS
 C:\university\csharp\Labasp\Lab1.Domain\obj\Debug\net9.0\Lab1.Domain.AssemblyInfoInputs.cache
 C:\university\csharp\Labasp\Lab1.Domain\obj\Debug\net9.0\Lab1.Domain.AssemblyInfo.cs
 C:\university\csharp\Labasp\Lab1.Domain\obj\Debug\net9.0\Lab1.Domain.csproj.CoreCompileInputs.cache
+C:\university\csharp\Labasp\Lab1.Domain\obj\Debug\net9.0\Lab1.Domain.sourcelink.json
 C:\university\csharp\Labasp\Lab1.Domain\obj\Debug\net9.0\Lab1.Domain.dll
 C:\university\csharp\Labasp\Lab1.Domain\obj\Debug\net9.0\refint\Lab1.Domain.dll
 C:\university\csharp\Labasp\Lab1.Domain\obj\Debug\net9.0\Lab1.Domain.pdb

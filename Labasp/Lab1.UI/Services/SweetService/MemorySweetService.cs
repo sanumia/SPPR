@@ -46,6 +46,8 @@ namespace Lab1.UI.Services.SweetService
             var listModel = new ListModel<Sweet>
             {
                 Items = pagedSweets,
+                TotalCount = totalCount,
+                PageSize = itemsPerPage,
                 CurrentPage = pageNo,
                 TotalPages = totalPages,
                 CurrentCategory = categoryNormalizedName
@@ -64,7 +66,7 @@ namespace Lab1.UI.Services.SweetService
             return Task.FromResult(ResponseData<Sweet>.Success(sweet));
         }
 
-        public Task<ResponseData<Sweet>> CreateSweetAsync(Sweet sweet)
+        public Task<ResponseData<Sweet>> CreateSweetAsync(Sweet sweet, IFormFile? image = null)
         {
             if (sweet == null)
             {
@@ -78,7 +80,7 @@ namespace Lab1.UI.Services.SweetService
             return Task.FromResult(ResponseData<Sweet>.Success(sweet));
         }
 
-        public Task<ResponseData<Sweet>> UpdateSweetAsync(Sweet sweet)
+        public Task<ResponseData<Sweet>> UpdateSweetAsync(Sweet sweet, IFormFile? image = null)
         {
             var existing = _sweets.FirstOrDefault(s => s.Id == sweet.Id);
             if (existing == null)

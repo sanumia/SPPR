@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <BlazorEnableTimeZoneSupport>false</BlazorEnableTimeZoneSupport>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\cake.jpg" />
+    <None Include="wwwroot\images\caramel-candy.jpg" />
+    <None Include="wwwroot\images\chocolate-cookies.jpg" />
+    <None Include="wwwroot\images\default-profile-picture.png" />
+    <None Include="wwwroot\images\dubai-chocolate.jpg" />
+    <None Include="wwwroot\images\gummy-bears.jpg" />
+    <None Include="wwwroot\images\vanilla-marshmallow.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.8" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="9.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lab1.Domain\Lab1.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

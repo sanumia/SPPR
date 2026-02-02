@@ -1,0 +1,5 @@
+2025-11-29 12:35:06.510 +03:00 [INF] Requesting categories from API
+2025-11-29 12:35:51.194 +03:00 [INF] Requesting categories from API
+2025-11-29 12:36:02.959 +03:00 [INF] ---> request /Logout returns 302
+2025-11-29 12:36:03.074 +03:00 [WRN] Authorization header not set: token is null.
+2025-11-29 12:36:05.984 +03:00 [INF] ---> request /Login returns 302

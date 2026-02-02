@@ -4600,3 +4600,5 @@ C:\university\csharp\Labasp\Lab1\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger
 C:\university\csharp\Labasp\Lab1\bin\Debug\net9.0\Lab1.API.dll
 C:\university\csharp\Labasp\Lab1\bin\Debug\net9.0\Lab1.API.pdb
 C:\university\csharp\Labasp\Lab1\obj\Debug\net9.0\compressed\3n1hq9v5w3-9gtff4u808.gz
+C:\university\csharp\Labasp\Lab1\obj\Debug\net9.0\Lab1.MvcApplicationPartsAssemblyInfo.cs
+C:\university\csharp\Labasp\Lab1\obj\Debug\net9.0\Lab1.sourcelink.json

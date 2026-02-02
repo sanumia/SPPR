@@ -14,6 +14,7 @@ namespace Lab1.API.Data
         }
         public DbSet<Sweet> Sweets { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<CartEntry> CartEntries { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -33,12 +34,24 @@ namespace Lab1.API.Data
                 // Дополнительные настройки если нужно
                 entity.Property(s => s.Name).HasMaxLength(100);
                 entity.Property(s => s.Price).HasColumnType("decimal(18,2)");
-            });
+            }); 
 
             modelBuilder.Entity<Category>(entity =>
             {
                 entity.HasKey(c => c.Id);
                 entity.Property(c => c.Name).HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<CartEntry>(entity =>
+            {
+                entity.HasKey(c => c.Id);
+                entity.Property(c => c.UserId).IsRequired().HasMaxLength(128);
+                entity.Property(c => c.Quantity).HasDefaultValue(1);
+
+                entity.HasOne(c => c.Sweet)
+                      .WithMany()
+                      .HasForeignKey(c => c.SweetId)
+                      .OnDelete(DeleteBehavior.Cascade);
             });
         }
     }

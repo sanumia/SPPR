@@ -1,0 +1,5 @@
+2025-12-01 12:07:13.262 +03:00 [INF] Requesting categories from API
+2025-12-01 12:07:13.336 +03:00 [INF] Access Token expired or about to expire. Attempting refresh.
+2025-12-01 12:07:13.624 +03:00 [ERR] Keycloak refresh token request failed: "BadRequest". Response: {"error":"invalid_grant","error_description":"Token is not active"}
+2025-12-01 12:07:13.634 +03:00 [ERR] Token refresh failed. Signing out user.
+2025-12-01 12:07:13.637 +03:00 [WRN] User Access Token is not available or could not be refreshed. Authorization header is not set.

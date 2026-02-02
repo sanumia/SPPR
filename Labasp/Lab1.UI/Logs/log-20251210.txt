@@ -1,0 +1,25 @@
+2025-12-10 17:28:36.879 +03:00 [INF] Requesting categories from API
+2025-12-10 17:28:36.974 +03:00 [INF] Access Token expired or about to expire. Attempting refresh.
+2025-12-10 17:28:41.756 +03:00 [ERR] Error getting category list
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Lab1.UI.Services.Authentication.KeycloakTokenAccessor.RefreshTokenAsync(String oldRefreshToken) in C:\university\csharp\Labasp\Lab1.UI\Services\Authentication\KeycloakTokenAccessor.cs:line 165
+   at Lab1.UI.Services.Authentication.KeycloakTokenAccessor.GetUserAccessTokenAsync() in C:\university\csharp\Labasp\Lab1.UI\Services\Authentication\KeycloakTokenAccessor.cs:line 65
+   at Lab1.UI.Services.Authentication.KeycloakTokenAccessor.SetAuthorizationHeaderAsync(HttpClient httpClient, Boolean isClient) in C:\university\csharp\Labasp\Lab1.UI\Services\Authentication\KeycloakTokenAccessor.cs:line 105
+   at Lab1.UI.Services.CategoryService.ApiCategoryService.GetCategoryListAsync() in C:\university\csharp\Labasp\Lab1.UI\Services\CategoryService\ApiCategoryService.cs:line 48

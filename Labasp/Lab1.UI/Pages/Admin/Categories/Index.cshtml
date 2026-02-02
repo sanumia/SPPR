@@ -1,0 +1,34 @@
+@page
+@model Lab1.UI.Pages.Admin.Categories.IndexModel
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h3>Категории</h3>
+    <a class="btn btn-success" asp-page="Create"><i class="bi bi-plus-circle"></i> Добавить</a>
+  </div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Название</th>
+            <th>Код</th>
+            <th class="text-end">Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var c in Model.Items)
+    {
+        <tr>
+            <td>@c.Id</td>
+            <td>@c.Name</td>
+            <td>@c.NormalizedName</td>
+            <td class="text-end">
+                <a class="btn btn-primary btn-sm" asp-page="Edit" asp-route-id="@c.Id"><i class="bi bi-pencil"></i></a>
+                <a class="btn btn-outline-danger btn-sm" asp-page="Delete" asp-route-id="@c.Id"><i class="bi bi-trash"></i></a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+

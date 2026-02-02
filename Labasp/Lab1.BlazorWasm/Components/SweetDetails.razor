@@ -1,0 +1,34 @@
+@using Lab1.Domain.Entities
+
+@if (SelectedSweet != null)
+{
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-4">
+                @if (!string.IsNullOrWhiteSpace(SelectedSweet.Image))
+                {
+                    <img src="@SelectedSweet.Image" class="img-fluid rounded-start" alt="@SelectedSweet.Name">
+                }
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">@SelectedSweet.Name</h5>
+                    <p class="card-text">@SelectedSweet.Description</p>
+                    <p class="card-text">
+                        <small class="text-muted">Категория: @SelectedSweet.Category?.Name</small>
+                    </p>
+                    <p class="card-text">
+                        <strong class="text-primary h4">@SelectedSweet.Price.ToString("0.00") BYN</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public Sweet? SelectedSweet { get; set; }
+}
+
+
+

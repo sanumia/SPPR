@@ -1,0 +1,31 @@
+﻿@page
+@model Lab1.UI.Pages.Admin.ManagementModel
+@{
+    ViewData["Title"] = "Администрирование";
+}
+
+<div class="container mt-4">
+    <h1>Администрирование</h1>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Управление пользователями</h5>
+                    <p class="card-text">Регистрация новых пользователей в системе</p>
+                    <a href="/Account/Register" class="btn btn-primary">Зарегистрировать пользователя</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Управление контентом</h5>
+                    <p class="card-text">Управление сладостями и категориями</p>
+                    <!-- Добавьте ссылки на ваши страницы управления -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

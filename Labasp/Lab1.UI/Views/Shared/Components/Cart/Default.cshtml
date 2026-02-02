@@ -1,0 +1,12 @@
+@model Lab1.Domain.Models.Cart
+
+<a class="nav-link position-relative" asp-controller="Cart" asp-action="Index" asp-route-returnUrl="@Context.Request.Path + Context.Request.QueryString">
+    <i class="bi bi-cart3"></i>
+    @if (Model.Count > 0)
+    {
+        <span class="badge bg-danger rounded-pill position-absolute top-0 start-100 translate-middle">
+            @Model.Count
+        </span>
+    }
+</a>
+

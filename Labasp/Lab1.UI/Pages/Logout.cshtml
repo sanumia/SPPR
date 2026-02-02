@@ -1,0 +1,22 @@
+﻿@page
+@model Lab1.UI.Pages.LogoutModel
+@{
+    ViewData["Title"] = "Выход";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h2 class="card-title">Выход из системы</h2>
+                    <p class="card-text">Вы уверены, что хотите выйти?</p>
+                    <form method="post">
+                        <button type="submit" class="btn btn-primary">Выйти</button>
+                        <a href="/" class="btn btn-secondary">Отмена</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

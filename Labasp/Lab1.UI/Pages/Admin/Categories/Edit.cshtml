@@ -1,0 +1,19 @@
+@page "{id:int}"
+@model Lab1.UI.Pages.Admin.Categories.EditModel
+
+<h4>Редактировать категорию</h4>
+<form method="post">
+    <input type="hidden" asp-for="Item.Id" />
+    <div class="mb-3">
+        <label asp-for="Item.Name" class="form-label"></label>
+        <input asp-for="Item.Name" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Item.NormalizedName" class="form-label"></label>
+        <input asp-for="Item.NormalizedName" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Сохранить</button>
+    <a asp-page="Index" class="btn btn-secondary">Отмена</a>
+</form>
+
+

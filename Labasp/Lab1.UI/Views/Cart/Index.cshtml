@@ -1,0 +1,89 @@
+@using System.Linq
+@model Lab1.UI.Models.ViewModels.CartViewModel
+@{
+    ViewData["Title"] = "Корзина";
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3">Корзина</h1>
+        <div>
+            <a class="btn btn-outline-secondary" href="@Model.ReturnUrl">
+                <i class="bi bi-arrow-left-circle"></i> Вернуться к покупкам
+            </a>
+        </div>
+    </div>
+
+    @if (!Model.Cart.Items.Any())
+    {
+        <div class="alert alert-info">
+            <i class="bi bi-info-circle"></i> Ваша корзина пуста.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table align-middle">
+                <thead>
+                    <tr>
+                        <th>Товар</th>
+                        <th class="text-center">Количество</th>
+                        <th class="text-end">Цена</th>
+                        <th class="text-end">Сумма</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model.Cart.Items)
+                {
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                @if (!string.IsNullOrWhiteSpace(item.Image))
+                                {
+                                    <img src="@item.Image" class="rounded me-3" style="width:64px;height:64px;object-fit:cover;" alt="@item.Name" />
+                                }
+                                <span>@item.Name</span>
+                            </div>
+                        </td>
+                        <td class="text-center">@item.Count</td>
+                        <td class="text-end">@item.Price.ToString("0.00") BYN</td>
+                        <td class="text-end">@item.TotalPrice.ToString("0.00") BYN</td>
+                        <td class="text-end">
+                            <form asp-controller="Cart" asp-action="Remove" asp-route-id="@item.SweetId" method="post">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
+                                <button type="submit" class="btn btn-sm btn-outline-danger">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-end fw-bold">Итого</td>
+                        <td class="text-end fw-bold">@Model.Cart.TotalPrice.ToString("0.00") BYN</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <form asp-controller="Cart" asp-action="Clear" method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
+                <button type="submit" class="btn btn-outline-danger">
+                    <i class="bi bi-x-circle"></i> Очистить корзину
+                </button>
+            </form>
+
+            <button class="btn btn-success" type="button" disabled>
+                <i class="bi bi-credit-card"></i> Оформление заказа (скоро)
+            </button>
+        </div>
+    }
+</div>
+

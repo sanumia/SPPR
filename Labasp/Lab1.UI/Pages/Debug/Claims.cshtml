@@ -1,0 +1,82 @@
+@page
+@{
+    ViewData["Title"] = "Debug Claims";
+}
+
+<div class="container mt-5">
+    <h2>Debug: User Claims</h2>
+    
+    @if (User.Identity?.IsAuthenticated == true)
+    {
+        <div class="alert alert-success">
+            <strong>Аутентифицирован:</strong> Да<br/>
+            <strong>Имя:</strong> @User.Identity.Name
+        </div>
+        
+        <h3>Все Claims:</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Тип</th>
+                    <th>Значение</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var claim in User.Claims)
+                {
+                    <tr>
+                        <td>@claim.Type</td>
+                        <td>@claim.Value</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        
+        <h3>Проверка ролей:</h3>
+        <ul>
+            <li><strong>User.IsInRole("POWER-USER"):</strong> @User.IsInRole("POWER-USER")</li>
+            <li><strong>ClaimTypes.Role = "POWER-USER":</strong> @User.Claims.Any(c => c.Type == System.Security.Claims.ClaimTypes.Role && c.Value == "POWER-USER")</li>
+            <li><strong>Type = "roles" и Value = "POWER-USER":</strong> @User.Claims.Any(c => c.Type == "roles" && c.Value == "POWER-USER")</li>
+            <li><strong>Case-insensitive check:</strong> @User.Claims.Any(c => (c.Type == System.Security.Claims.ClaimTypes.Role || c.Type == "roles") && c.Value.Equals("POWER-USER", StringComparison.OrdinalIgnoreCase))</li>
+        </ul>
+        
+        var realmAccessClaim = User.Claims.FirstOrDefault(c => c.Type == "realm_access");
+        var resourceAccessClaim = User.Claims.FirstOrDefault(c => c.Type == "resource_access");
+        
+        <h3>Realm Access:</h3>
+        @if (realmAccessClaim != null)
+        {
+            <pre>@realmAccessClaim.Value</pre>
+        }
+        else
+        {
+            <p>Нет realm_access claim</p>
+        }
+        
+        <h3>Resource Access:</h3>
+        @if (resourceAccessClaim != null)
+        {
+            <pre>@resourceAccessClaim.Value</pre>
+        }
+        else
+        {
+            <p>Нет resource_access claim</p>
+        }
+        
+        <h3>Все роли:</h3>
+        <ul>
+            @foreach (var role in User.Claims.Where(c => c.Type == System.Security.Claims.ClaimTypes.Role || c.Type == "roles"))
+            {
+                <li>@role.Value</li>
+            }
+        </ul>
+    }
+    else
+    {
+        <div class="alert alert-warning">
+            Пользователь не аутентифицирован
+        </div>
+    }
+    
+    <a href="/" class="btn btn-primary">На главную</a>
+</div>

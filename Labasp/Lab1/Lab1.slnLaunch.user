@@ -3,11 +3,19 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "Lab1.csproj",
+        "Path": "..\\Lab1.API\\Lab1.API.csproj",
         "Action": "Start"
       },
       {
-        "Path": "..\\Lab1.API\\Lab1.API.csproj",
+        "Path": "..\\Lab1.BlazorWasm\\Lab1.BlazorWasm.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\Lab1.UI\\Lab1.UI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\Lab1.Blazor.SSR\\Lab1.Blazor.SSR.csproj",
         "Action": "Start"
       }
     ]

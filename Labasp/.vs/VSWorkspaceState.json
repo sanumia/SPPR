@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Lab1",
+    "\\Lab1.BlazorWasm",
     "\\Lab1.Domain",
     "\\Lab1.UI"
   ],
-  "SelectedNode": "\\Lab1\\Program.cs",
+  "SelectedNode": "\\Lab1.BlazorWasm\\Lab1.BlazorWasm.csproj",
   "PreviewInSolutionExplorer": false
 }

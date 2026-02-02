@@ -21,6 +21,34 @@ namespace Lab1.API.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("Lab1.Domain.Entities.CartEntry", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Quantity")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasDefaultValue(1);
+
+                    b.Property<int>("SweetId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("character varying(128)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SweetId");
+
+                    b.ToTable("CartEntries");
+                });
+
             modelBuilder.Entity("Lab1.Domain.Entities.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -79,6 +107,17 @@ namespace Lab1.API.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Sweets");
+                });
+
+            modelBuilder.Entity("Lab1.Domain.Entities.CartEntry", b =>
+                {
+                    b.HasOne("Lab1.Domain.Entities.Sweet", "Sweet")
+                        .WithMany()
+                        .HasForeignKey("SweetId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Sweet");
                 });
 
             modelBuilder.Entity("Lab1.Domain.Entities.Sweet", b =>

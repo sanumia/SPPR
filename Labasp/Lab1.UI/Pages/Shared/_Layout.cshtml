@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@using System.Linq
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Lab1.UI</title>
-    <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Lab1.UI.styles.css" asp-append-version="true" />
@@ -12,45 +12,102 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Lab1.UI</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" asp-page="/Index">Lab1</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-dark" asp-page="/Index">Главная</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-controller="Sweets" asp-action="Index">Каталог</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Admin" asp-page="/Sweets/Index"><i class="bi bi-gear-wide-connected"></i> Admin</a>
-                        </li>
+
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
+                            var roles = User.Claims.Where(c => c.Type == "role").Select(c => c.Value).ToList();
+                            var isAdmin = roles.Any(r => r.Equals("POWER-USER", StringComparison.OrdinalIgnoreCase));
+
+                            if (isAdmin)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-page="/Admin/Management">Администрирование</a>
+                                </li>
+                            }
+                        }
                     </ul>
+
+                    <ul class="navbar-nav">
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
+                            // Получаем значение из claim
+                            var avatarClaim = User.Claims.FirstOrDefault(c => c.Type == "avatar")?.Value;
+
+                            // Формируем корректный URL аватара: поддержка абсолютного и относительного путей
+                            var avatar = string.IsNullOrWhiteSpace(avatarClaim)
+                                ? Url.Content("~/images/default-profile-picture.png")
+                                : (avatarClaim.StartsWith("http", StringComparison.OrdinalIgnoreCase)
+                                    ? avatarClaim
+                                    : Url.Content(avatarClaim));
+
+                            <li class="nav-item me-2 d-flex align-items-center">
+                                @await Component.InvokeAsync("Cart")
+                            </li>
+
+                            <li class="nav-item dropdown d-flex align-items-center">
+                                <img src="@avatar" class="rounded-circle me-2" style="width:32px;height:32px;object-fit:cover;" />
+
+                                <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">
+                                    @User.Identity.Name
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" asp-page="/Account/Profile">
+                                            <i class="bi bi-person-circle"></i> Профиль
+                                        </a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <form method="post" asp-page="/Logout">
+                                            <button class="dropdown-item"><i class="bi bi-box-arrow-right"></i> Выйти</button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="/Login">Войти</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="/Account/Register">Регистрация</a>
+                            </li>
+                        }
+                    </ul>
+
                 </div>
             </div>
         </nav>
     </header>
+
     <div class="container">
-        <main role="main" class="pb-3">
+        <main class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - Lab1.UI - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
-
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

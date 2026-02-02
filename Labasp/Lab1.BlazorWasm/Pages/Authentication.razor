@@ -1,0 +1,29 @@
+﻿@page "/authentication/{action}"
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+<RemoteAuthenticatorView Action="@Action">
+    <LoggingIn>
+        <div class="text-center">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Вход в систему...</span>
+            </div>
+            <p>Вход в систему...</p>
+        </div>
+    </LoggingIn>
+    <LogInFailed Context="errorMessage">
+        <div class="alert alert-danger" role="alert">
+            <h4>Ошибка входа</h4>
+            <p>Не удалось войти в систему. Пожалуйста, попробуйте еще раз.</p>
+            <p><small>@errorMessage</small></p>
+            <button class="btn btn-primary" @onclick="RetryLogin">
+                Попробовать снова
+            </button>
+        </div>
+    </LogInFailed>
+</RemoteAuthenticatorView>
+
+@code{
+    [Parameter] public string? Action { get; set; }
+    [Inject] public NavigationManager Navigation { get; set; } = null!;
+
+    private void RetryLogin() => Navigation.NavigateToLogin("authentication/login");
+}

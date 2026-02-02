@@ -1,0 +1,56 @@
+@model SweetsCatalogViewModel
+@{
+    ViewData["Title"] = "Каталог сладостей";
+    var currentCategory = Model.Sweets.CurrentCategory ?? Model.SelectedCategory;
+}
+
+<div class="container py-4">
+    <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 mb-4">
+        <div>
+            <h1 class="h3 mb-0">@ViewData["Title"]</h1>
+            <p class="text-muted mb-0">Выберите категорию, чтобы увидеть подходящие товары</p>
+        </div>
+        <div class="text-md-end">
+            <span class="badge bg-light text-dark">
+                <i class="bi bi-collection me-1"></i>
+                Найдено товаров: @Model.Sweets.Items.Count
+            </span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="card-title mb-0">
+                        <i class="bi bi-funnel me-2"></i>Категории
+                    </h5>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action @(string.IsNullOrEmpty(currentCategory) ? "active" : "")"
+                       asp-controller="Sweets"
+                       asp-action="Index"
+                       asp-route-category=""
+                       asp-route-pageNo="1">
+                        <i class="bi bi-grid-3x3-gap me-2"></i>Все категории
+                    </a>
+                    @foreach (var category in Model.Categories)
+                    {
+                        <a class="list-group-item list-group-item-action @(string.Equals(currentCategory, category.NormalizedName, StringComparison.OrdinalIgnoreCase) ? "active" : "")"
+                           asp-controller="Sweets"
+                           asp-action="Index"
+                           asp-route-category="@category.NormalizedName">
+                            <i class="bi bi-tag me-2"></i>@category.Name
+                        </a>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-9" id="sweets-list-container">
+            @await Html.PartialAsync("_SweetsListPartial", Model)
+        </div>
+    </div>
+</div>
+
+

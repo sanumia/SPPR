@@ -41,20 +41,11 @@
     </tbody>
   </table>
 
-<nav aria-label="Навигация по страницам">
-  <ul class="pagination justify-content-center">
-    <li class="page-item @(Model.CurrentPage <= 1 ? "disabled" : "")">
-      <a class="page-link" asp-route-pageNo="@(Model.CurrentPage - 1)"><i class="bi bi-chevron-left"></i></a>
-    </li>
-    @for (var p = 1; p <= Model.TotalPages; p++)
-    {
-        <li class="page-item @(p == Model.CurrentPage ? "active" : "")">
-            <a class="page-link" asp-route-pageNo="@p">@p</a>
-        </li>
-    }
-    <li class="page-item @(Model.CurrentPage >= Model.TotalPages ? "disabled" : "")">
-      <a class="page-link" asp-route-pageNo="@(Model.CurrentPage + 1)"><i class="bi bi-chevron-right"></i></a>
-    </li>
-  </ul>
-</nav>
+<div class="mt-4">
+    <Pager current-page="Model.CurrentPage"
+           total-pages="Model.TotalPages"
+           admin="true"
+           asp-page="/Admin/Sweets/Index">
+    </Pager>
+</div>
 

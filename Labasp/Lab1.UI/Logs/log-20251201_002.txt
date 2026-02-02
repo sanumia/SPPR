@@ -1,0 +1,15 @@
+2025-12-01 12:20:57.205 +03:00 [INF] Requesting categories from API
+2025-12-01 12:20:57.286 +03:00 [INF] Access Token expired or about to expire. Attempting refresh.
+2025-12-01 12:20:57.315 +03:00 [ERR] Keycloak refresh token request failed: "BadRequest". Response: {"error":"invalid_grant","error_description":"Token is not active"}
+2025-12-01 12:20:57.324 +03:00 [ERR] Token refresh failed. Signing out user.
+2025-12-01 12:20:57.327 +03:00 [WRN] User Access Token is not available or could not be refreshed. Authorization header is not set.
+2025-12-01 12:28:34.791 +03:00 [INF] Requesting categories from API
+2025-12-01 12:28:34.794 +03:00 [INF] Access Token expired or about to expire. Attempting refresh.
+2025-12-01 12:28:34.813 +03:00 [ERR] Keycloak refresh token request failed: "BadRequest". Response: {"error":"invalid_grant","error_description":"Token is not active"}
+2025-12-01 12:28:34.817 +03:00 [ERR] Token refresh failed. Signing out user.
+2025-12-01 12:28:34.822 +03:00 [WRN] User Access Token is not available or could not be refreshed. Authorization header is not set.
+2025-12-01 12:30:03.633 +03:00 [INF] Requesting categories from API
+2025-12-01 12:30:03.798 +03:00 [INF] Access Token expired or about to expire. Attempting refresh.
+2025-12-01 12:30:03.883 +03:00 [ERR] Keycloak refresh token request failed: "BadRequest". Response: {"error":"invalid_grant","error_description":"Token is not active"}
+2025-12-01 12:30:03.909 +03:00 [ERR] Token refresh failed. Signing out user.
+2025-12-01 12:30:03.920 +03:00 [WRN] User Access Token is not available or could not be refreshed. Authorization header is not set.

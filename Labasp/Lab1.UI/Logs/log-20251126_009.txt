@@ -1,0 +1,34 @@
+2025-11-26 19:20:53.585 +03:00 [INF] Requesting sweets from URL: ?pageNo=1
+2025-11-26 19:20:56.402 +03:00 [ERR] Error getting sweet list for category null
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.Json.HttpClientJsonExtensions.<FromJsonAsyncCore>g__Core|12_0[TValue,TJsonOptions](HttpClient client, Task`1 responseTask, Boolean usingResponseHeadersRead, CancellationTokenSource linkedCTS, Func`4 deserializeMethod, TJsonOptions jsonOptions, CancellationToken cancellationToken)
+   at Lab1.UI.Services.SweetService.ApiSweetService.GetSweetListAsync(String categoryNormalizedName, Int32 pageNo) in C:\university\csharp\Labasp\Lab1.UI\Services\SweetService\ApiSweetService.cs:line 57
+2025-11-26 19:20:59.529 +03:00 [INF] Requesting sweets from URL: ?pageNo=1
+2025-11-26 19:20:59.538 +03:00 [INF] Requesting categories from API
+2025-11-26 19:20:59.632 +03:00 [ERR] Error getting sweet list for category null
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.Json.HttpClientJsonExtensions.<FromJsonAsyncCore>g__Core|12_0[TValue,TJsonOptions](HttpClient client, Task`1 responseTask, Boolean usingResponseHeadersRead, CancellationTokenSource linkedCTS, Func`4 deserializeMethod, TJsonOptions jsonOptions, CancellationToken cancellationToken)
+   at Lab1.UI.Services.SweetService.ApiSweetService.GetSweetListAsync(String categoryNormalizedName, Int32 pageNo) in C:\university\csharp\Labasp\Lab1.UI\Services\SweetService\ApiSweetService.cs:line 57
+2025-11-26 19:21:07.239 +03:00 [INF] ---> request /.well-known/appspecific/com.chrome.devtools.json returns 404
+2025-11-26 19:21:15.206 +03:00 [INF] Requesting sweets from URL: ?pageNo=1
+2025-11-26 19:21:15.316 +03:00 [ERR] Error getting sweet list for category null
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.Json.HttpClientJsonExtensions.<FromJsonAsyncCore>g__Core|12_0[TValue,TJsonOptions](HttpClient client, Task`1 responseTask, Boolean usingResponseHeadersRead, CancellationTokenSource linkedCTS, Func`4 deserializeMethod, TJsonOptions jsonOptions, CancellationToken cancellationToken)
+   at Lab1.UI.Services.SweetService.ApiSweetService.GetSweetListAsync(String categoryNormalizedName, Int32 pageNo) in C:\university\csharp\Labasp\Lab1.UI\Services\SweetService\ApiSweetService.cs:line 57
+2025-11-26 19:21:15.455 +03:00 [INF] ---> request /.well-known/appspecific/com.chrome.devtools.json returns 404
+2025-11-26 19:28:57.369 +03:00 [INF] Requesting sweets from URL: ?pageNo=1
+2025-11-26 19:29:00.129 +03:00 [ERR] Error getting sweet list for category null
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.Json.HttpClientJsonExtensions.<FromJsonAsyncCore>g__Core|12_0[TValue,TJsonOptions](HttpClient client, Task`1 responseTask, Boolean usingResponseHeadersRead, CancellationTokenSource linkedCTS, Func`4 deserializeMethod, TJsonOptions jsonOptions, CancellationToken cancellationToken)
+   at Lab1.UI.Services.SweetService.ApiSweetService.GetSweetListAsync(String categoryNormalizedName, Int32 pageNo) in C:\university\csharp\Labasp\Lab1.UI\Services\SweetService\ApiSweetService.cs:line 57
+2025-11-26 19:29:02.507 +03:00 [INF] Requesting sweets from URL: ?pageNo=1
+2025-11-26 19:29:02.516 +03:00 [INF] Requesting categories from API
+2025-11-26 19:29:02.606 +03:00 [ERR] Error getting sweet list for category null
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.Json.HttpClientJsonExtensions.<FromJsonAsyncCore>g__Core|12_0[TValue,TJsonOptions](HttpClient client, Task`1 responseTask, Boolean usingResponseHeadersRead, CancellationTokenSource linkedCTS, Func`4 deserializeMethod, TJsonOptions jsonOptions, CancellationToken cancellationToken)
+   at Lab1.UI.Services.SweetService.ApiSweetService.GetSweetListAsync(String categoryNormalizedName, Int32 pageNo) in C:\university\csharp\Labasp\Lab1.UI\Services\SweetService\ApiSweetService.cs:line 57

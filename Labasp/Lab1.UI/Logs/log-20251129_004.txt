@@ -1,0 +1,7 @@
+2025-11-29 12:35:51.194 +03:00 [INF] Requesting categories from API
+2025-11-29 12:36:02.959 +03:00 [INF] ---> request /Logout returns 302
+2025-11-29 12:36:03.074 +03:00 [WRN] Authorization header not set: token is null.
+2025-11-29 12:36:05.984 +03:00 [INF] ---> request /Login returns 302
+2025-11-29 12:42:06.408 +03:00 [INF] Requesting categories from API
+2025-11-29 12:42:06.481 +03:00 [INF] Access Token expired or about to expire. Attempting refresh.
+2025-11-29 12:42:06.581 +03:00 [INF] Token successfully refreshed.

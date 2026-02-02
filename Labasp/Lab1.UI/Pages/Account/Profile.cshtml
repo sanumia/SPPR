@@ -1,0 +1,23 @@
+﻿@page
+@model ProfileModel
+@{
+    ViewData["Title"] = "Профиль";
+}
+
+<h2>Профиль пользователя</h2>
+
+<div class="card" style="max-width:400px;">
+    <div class="card-body text-center">
+        <img src="@(Model.AvatarUrl?.StartsWith("http", StringComparison.OrdinalIgnoreCase) == true ? Model.AvatarUrl : Url.Content(Model.AvatarUrl))" class="rounded-circle mb-3" style="width:120px;height:120px;object-fit:cover;" />
+
+        <p><strong>Email:</strong> @Model.Email</p>
+
+        <form method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label class="form-label">Новый аватар</label>
+                <input type="file" asp-for="Avatar" class="form-control" accept="image/*" />
+            </div>
+            <button class="btn btn-primary">Обновить</button>
+        </form>
+    </div>
+</div>

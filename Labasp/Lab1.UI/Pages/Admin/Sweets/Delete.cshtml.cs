@@ -1,11 +1,13 @@
 using System.Threading.Tasks;
 using Lab1.Domain.Entities;
 using Lab1.UI.Services.SweetService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Lab1.UI.Pages.Admin.Sweets
 {
+    [Authorize(Policy = "admin")]
     public class DeleteModel : PageModel
     {
         private readonly ISweetService _sweetService;

@@ -1,0 +1,11 @@
+﻿namespace Lab1.BlazorWasm.Models
+{
+    public class ListModel<T>
+    {
+        public IEnumerable<T> Items { get; set; } = new List<T>();
+        public int TotalCount { get; set; }
+        public int PageNo { get; set; }
+        public int PageSize { get; set; }
+        public int TotalPages => (int)Math.Ceiling((double)TotalCount / (PageSize > 0 ? PageSize : 1));
+    }
+}

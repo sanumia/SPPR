@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Lab1.API.Data;
 using Lab1.Domain.Entities;
@@ -23,6 +24,7 @@ namespace Lab1.API.Controllers
 
         // GET: api/Categories
         [HttpGet]
+        [AllowAnonymous] // Разрешаем анонимный доступ для чтения категорий
         public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
         {
             return await _context.Categories.ToListAsync();
@@ -30,6 +32,7 @@ namespace Lab1.API.Controllers
 
         // GET: api/Categories/5
         [HttpGet("{id}")]
+        [AllowAnonymous] // Разрешаем анонимный доступ для чтения категории
         public async Task<ActionResult<Category>> GetCategory(int id)
         {
             var category = await _context.Categories.FindAsync(id);
@@ -45,6 +48,7 @@ namespace Lab1.API.Controllers
         // PUT: api/Categories/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [Authorize(Policy = "admin")]
         public async Task<IActionResult> PutCategory(int id, Category category)
         {
             if (id != category.Id)
@@ -76,6 +80,7 @@ namespace Lab1.API.Controllers
         // POST: api/Categories
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [Authorize(Policy = "admin")]
         public async Task<ActionResult<Category>> PostCategory(Category category)
         {
             _context.Categories.Add(category);
@@ -86,6 +91,7 @@ namespace Lab1.API.Controllers
 
         // DELETE: api/Categories/5
         [HttpDelete("{id}")]
+        [Authorize(Policy = "admin")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
             var category = await _context.Categories.FindAsync(id);

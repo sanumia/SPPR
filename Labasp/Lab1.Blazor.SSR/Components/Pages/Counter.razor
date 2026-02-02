@@ -1,0 +1,61 @@
+﻿@page "/counter"
+@page "/counter/{InitialCount:int}"
+@rendermode InteractiveServer
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<input type="number" @bind="usersNumber" @bind:event="oninput" min="1" max="10" placeholder="Введите число от 1 до 10">
+<button type="submit" @onclick="SetCount">Установить</button>
+@if (!string.IsNullOrEmpty(validationMessage))
+{
+    <div class="alert alert-danger mt-2" style="width: 300px;">
+        @validationMessage
+    </div>
+}
+
+@code {
+    private int currentCount = 0;
+    private int usersNumber = 1;
+    private string validationMessage = "";
+    private int? initialCountFromUrl = null;
+
+    [Parameter]
+    public int InitialCount { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        if (InitialCount > 0)
+        {
+            // Если параметр передан в URL, используем его как начальное значение
+            currentCount = InitialCount;
+            usersNumber = InitialCount;
+            initialCountFromUrl = InitialCount;
+        }
+    }
+
+
+    private void IncrementCount()
+    {
+        currentCount++;
+        validationMessage = "";
+        initialCountFromUrl = null;
+    }
+    private void SetCount()
+    {
+        if (usersNumber >= 1 && usersNumber <= 10)
+        {
+            currentCount = usersNumber;
+            validationMessage = ""; 
+            initialCountFromUrl = null;
+        }
+        else
+        {
+            validationMessage = "Пожалуйста, введите число от 1 до 10";
+        }
+    }
+}

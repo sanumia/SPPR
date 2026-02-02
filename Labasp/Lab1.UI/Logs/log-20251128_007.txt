@@ -1,0 +1,28 @@
+2025-11-28 14:20:28.979 +03:00 [INF] Requesting sweets from URL: ?pageNo=1 using Public Client
+2025-11-28 14:20:29.952 +03:00 [ERR] Error getting sweet list for category null. Public access request failed.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.Json.HttpClientJsonExtensions.<FromJsonAsyncCore>g__Core|12_0[TValue,TJsonOptions](HttpClient client, Task`1 responseTask, Boolean usingResponseHeadersRead, CancellationTokenSource linkedCTS, Func`4 deserializeMethod, TJsonOptions jsonOptions, CancellationToken cancellationToken)
+   at Lab1.UI.Services.SweetService.ApiSweetService.GetSweetListAsync(String categoryNormalizedName, Int32 pageNo) in C:\university\csharp\Labasp\Lab1.UI\Services\SweetService\ApiSweetService.cs:line 65
+2025-11-28 14:20:31.927 +03:00 [INF] Requesting sweets from URL: ?pageNo=1 using Public Client
+2025-11-28 14:20:31.934 +03:00 [INF] Requesting categories from API
+2025-11-28 14:20:31.982 +03:00 [ERR] Error getting sweet list for category null. Public access request failed.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.Json.HttpClientJsonExtensions.<FromJsonAsyncCore>g__Core|12_0[TValue,TJsonOptions](HttpClient client, Task`1 responseTask, Boolean usingResponseHeadersRead, CancellationTokenSource linkedCTS, Func`4 deserializeMethod, TJsonOptions jsonOptions, CancellationToken cancellationToken)
+   at Lab1.UI.Services.SweetService.ApiSweetService.GetSweetListAsync(String categoryNormalizedName, Int32 pageNo) in C:\university\csharp\Labasp\Lab1.UI\Services\SweetService\ApiSweetService.cs:line 65
+2025-11-28 14:26:32.096 +03:00 [INF] Requesting sweets from URL: ?pageNo=1 using Public Client
+2025-11-28 14:26:33.006 +03:00 [ERR] Error getting sweet list for category null. Public access request failed (Check if Backend API allows [AllowAnonymous] GET).
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.Json.HttpClientJsonExtensions.<FromJsonAsyncCore>g__Core|12_0[TValue,TJsonOptions](HttpClient client, Task`1 responseTask, Boolean usingResponseHeadersRead, CancellationTokenSource linkedCTS, Func`4 deserializeMethod, TJsonOptions jsonOptions, CancellationToken cancellationToken)
+   at Lab1.UI.Services.SweetService.ApiSweetService.GetSweetListAsync(String categoryNormalizedName, Int32 pageNo) in C:\university\csharp\Labasp\Lab1.UI\Services\SweetService\ApiSweetService.cs:line 66
+2025-11-28 14:26:34.692 +03:00 [INF] Requesting sweets from URL: ?pageNo=1 using Public Client
+2025-11-28 14:26:34.697 +03:00 [INF] Requesting categories from API
+2025-11-28 14:26:34.747 +03:00 [ERR] Error getting sweet list for category null. Public access request failed (Check if Backend API allows [AllowAnonymous] GET).
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.Json.HttpClientJsonExtensions.<FromJsonAsyncCore>g__Core|12_0[TValue,TJsonOptions](HttpClient client, Task`1 responseTask, Boolean usingResponseHeadersRead, CancellationTokenSource linkedCTS, Func`4 deserializeMethod, TJsonOptions jsonOptions, CancellationToken cancellationToken)
+   at Lab1.UI.Services.SweetService.ApiSweetService.GetSweetListAsync(String categoryNormalizedName, Int32 pageNo) in C:\university\csharp\Labasp\Lab1.UI\Services\SweetService\ApiSweetService.cs:line 66
+2025-11-28 14:26:34.761 +03:00 [INF] Access Token expired or about to expire. Attempting refresh.
+2025-11-28 14:26:34.842 +03:00 [INF] Token successfully refreshed.

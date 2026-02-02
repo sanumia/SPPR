@@ -4,32 +4,30 @@
     ViewData["Title"] = "Добавить сладость";
 }
 
-<h1 class="h3 mb-3">Добавить сладость</h1>
-
-<form method="post" class="needs-validation" novalidate>
+<h4>Добавить сладость</h4>
+<form method="post" enctype="multipart/form-data">
     <div class="mb-3">
         <label asp-for="Item.Name" class="form-label"></label>
         <input asp-for="Item.Name" class="form-control" />
-        <span asp-validation-for="Item.Name" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label asp-for="Item.Description" class="form-label"></label>
-        <textarea asp-for="Item.Description" class="form-control"></textarea>
+        <input asp-for="Item.Description" class="form-control" />
     </div>
     <div class="mb-3">
         <label asp-for="Item.Price" class="form-label"></label>
         <input asp-for="Item.Price" class="form-control" />
     </div>
     <div class="mb-3">
-        <label asp-for="Item.Image" class="form-label"></label>
-        <input asp-for="Item.Image" class="form-control" />
+        <label asp-for="Item.CategoryId" class="form-label">Категория</label>
+        <select asp-for="Item.CategoryId" asp-items="Model.Categories" class="form-select"></select>
     </div>
     <div class="mb-3">
-        <label asp-for="Item.CategoryId" class="form-label">Категория Id</label>
-        <input asp-for="Item.CategoryId" class="form-control" />
+        <label class="form-label">Изображение</label>
+        <input asp-for="Image" type="file" class="form-control" />
     </div>
-    <button type="submit" class="btn btn-primary"><i class="bi bi-check2"></i> Сохранить</button>
-    <a asp-page="Index" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Назад</a>
+    <button type="submit" class="btn btn-primary">Сохранить</button>
+    <a asp-page="Index" class="btn btn-secondary">Отмена</a>
 </form>
 
 @section Scripts{
